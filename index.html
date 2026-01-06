@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonhard Horstmeyer">
+    <title>Atlas of Smooth Spaces</title>
+    <style>
+        #infoPopup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            max-width: 400px;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        #infoPopup.hidden {
+            display: none;
+        }
+        
+        #infoPopup p {
+            margin: 0 0 20px 0;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+        
+        #exploreButton {
+            background: #000;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        #exploreButton:hover {
+            background: #333;
+        }
+    </style>
+    <script type="module" src="js/dialecticAttempts.js"></script>
+</head>
+<body>
+    <div id="infoPopup">
+        <p>If you hover over the media, they will start playing. Alternatively you can click and unclick them.</p>
+        <button id="exploreButton">Explore</button>
+    </div>
+</body>
+</html>
